@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ski_equipment_rental/common/page_url.dart';
-import 'package:ski_equipment_rental/presentation/page/sing_in.dart';
 import 'package:ski_equipment_rental/custom_router.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       onGenerateRoute: router.generateRouter,
       debugShowCheckedModeBanner: false,
-      initialRoute: PageUrl.singIn,
+      initialRoute: PageUrl.cardRoll,
     );
   }
 }
