@@ -28,6 +28,11 @@ class _HomeState extends State<Home> {
               label: 'Профиль',
             ),
           ]),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color(0xFF3CAAE8),
+        onPressed: () {},
+        child: Icon(Icons.map_outlined),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -71,9 +76,7 @@ class _HomeState extends State<Home> {
                             crossAxisCount: 2),
                     itemBuilder: (context, index) {
                       return InkWell(
-                        onTap: () {
-                          
-                        },
+                        onTap: () {},
                         child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14.0),

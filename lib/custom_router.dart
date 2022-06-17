@@ -4,6 +4,8 @@ import 'package:ski_equipment_rental/presentation/page/card_roll.dart';
 import 'package:ski_equipment_rental/presentation/page/home.dart';
 import 'package:ski_equipment_rental/presentation/page/sing_in.dart';
 import 'package:ski_equipment_rental/presentation/page/sing_up.dart';
+import 'package:ski_equipment_rental/presentation/page/tovar.dart';
+import 'package:ski_equipment_rental/presentation/page/information_tovar.dart';
 
 class CustomRouter {
   Route<dynamic>? generateRouter(RouteSettings settings) {
@@ -24,7 +26,15 @@ class CustomRouter {
 
       case PageUrl.cardRoll:
         {
-          return MaterialPageRoute(builder: (context) => CardRoll());
+          return MaterialPageRoute(builder: (context) => const CardRoll());
+        }
+      case PageUrl.tovar:
+        {
+          return MaterialPageRoute(builder: (context) => const Tovar());
+        }
+        case PageUrl.informationTovar:
+        {
+          return MaterialPageRoute(builder: (context) => const InformationTovar());
         }
       default:
         {

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       onGenerateRoute: router.generateRouter,
       debugShowCheckedModeBanner: false,
-      initialRoute: PageUrl.cardRoll,
+      initialRoute: PageUrl.informationTovar,
     );
   }
 }
